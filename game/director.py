@@ -5,7 +5,7 @@ from game.terminal import Terminal
 
 class Director:
 
-    def __init_(self):
+    def __init__(self):
         self.continue_playing = True
         self.terminal = Terminal()
         self.jumper = Jumper()

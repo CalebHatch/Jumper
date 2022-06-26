@@ -51,4 +51,4 @@ class Jumper:
             if self.lose:
                 print(chute[4])
                 print("You lose")
-                print(self.correct_wor)
+                print(self.correct_word)
