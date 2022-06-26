@@ -3,7 +3,7 @@ from game.words import word_list
 from game.words import words
 
 
-class Jumper:
+class _Jumper:
 
     def __init__(self):
         self.win = False
@@ -15,14 +15,14 @@ class Jumper:
         self.attempt = ""
         self.attempts_amount = 4
 
-    def attempt_letter(self, letter):
+    def _attempt_letter(self, letter):
         for i in range(0, len(self.correct_word)):
             letter = self.correct_word[i]
 
             if self.attempt == letter:
                 self.show_word[i] = self.attempt
 
-    def play_game(self):
+    def _play_game(self):
         # Loop to get player letter and play game
         while not self.win and self.attempts_amount > 0:
             self.show_word()
@@ -35,7 +35,7 @@ class Jumper:
                 self.show_word = self.correct_word
                 
             if len(self.attempt) == 1 and self.attempt in self.correct_word:
-                self.win = self.attempt_letter(self.attempt, self.correct_word)
+                self.win = self._attempt_letter(self.attempt, self.correct_word)
             else:
                 self.attempts_amount -= 1
 
