@@ -1,4 +1,3 @@
-
 class _Terminal:
 
     def read(self, prompt):

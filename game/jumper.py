@@ -1,6 +1,5 @@
 from game.chute import chute
 from game.words import word_list
-from game.words import words
 
 
 class _Jumper:
@@ -33,7 +32,7 @@ class _Jumper:
             if self.attempt == self.correct_word:
                 self.win = True
                 self.show_word = self.correct_word
-                
+
             if len(self.attempt) == 1 and self.attempt in self.correct_word:
                 self.win = self._attempt_letter(self.attempt, self.correct_word)
             else:

@@ -2,6 +2,7 @@ from game.jumper import _Jumper
 from game.terminal import _Terminal
 from game.words import word_list
 
+
 class Director:
 
     def __init__(self):
@@ -20,4 +21,3 @@ class Director:
 
     def get_updates(self):
         self.jumper._play_game()
-
