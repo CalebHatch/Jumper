@@ -1,7 +1,7 @@
 
 class Terminal:
 
-    def red(self, prompt):
+    def read(self, prompt):
         return input(prompt)
 
     def get_letter(self, prompt):
