@@ -1,5 +1,5 @@
 
-class Terminal:
+class _Terminal:
 
     def read(self, prompt):
         return input(prompt)

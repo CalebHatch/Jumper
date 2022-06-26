@@ -1,12 +1,12 @@
 from game.jumper import _Jumper
-from game.terminal import Terminal
+from game.terminal import _Terminal
 from game.words import word_list
 
 class Director:
 
     def __init__(self):
         self.continue_playing = True
-        self.terminal = Terminal()
+        self.terminal = _Terminal()
         self.jumper = _Jumper()
         self.words = word_list
 
